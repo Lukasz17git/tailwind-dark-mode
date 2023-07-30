@@ -1,6 +1,6 @@
 {
    "name": "dark-mode-tailwind",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "description": "Package to implement dark mode to an existing tailwindCSS project",
    "keywords": [
       "tailwind",
