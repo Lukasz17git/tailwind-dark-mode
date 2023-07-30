@@ -1,12 +1,52 @@
 {
-  "name": "tailwind-dark-mode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+   "name": "dark-mode-tailwind",
+   "version": "0.0.1",
+   "description": "Package to implement dark mode to an existing tailwindCSS project",
+   "keywords": [
+      "tailwind",
+      "tailwindcss",
+      "dark tailwind",
+      "dark tailwindcss",
+      "dark mode tailwind",
+      "dark mode tailwindcss",
+      "darkmode tailwind",
+      "darkmode tailwindcss",
+      "dark-mode-tailwind",
+      "dark-mode-tailwindcss"
+   ],
+   "author": "Lukasz Maraj",
+   "license": "MIT",
+   "private": false,
+   "main": "dist/index.js",
+   "module": "dist/index.mjs",
+   "types": "dist/index.d.ts",
+   "files": [
+      "dist",
+      "README.md",
+      "LICENSE"
+   ],
+   "scripts": {
+      "dev": "vitest",
+      "test": "vitest run",
+      "build": "tsup src/index.ts --format cjs,esm --dts",
+      "lint": "tsc",
+      "ci": "npm run lint && npm run test && npm run build",
+      "release": "npm run lint && npm run test && npm run build && changeset publish"
+   },
+   "homepage": "https://github.com/Lukasz17git/tailwind-dark-mode#readme",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Lukasz17git/tailwind-dark-mode.git"
+   },
+   "bugs": {
+      "url": "https://github.com/Lukasz17git/tailwind-dark-mode/issues"
+   },
+   "devDependencies": {
+      "@changesets/cli": "^2.26.2",
+      "csstype": "^3.1.2",
+      "tailwindcss": "^3.3.3",
+      "tsup": "^7.1.0",
+      "typescript": "^5.1.6",
+      "vitest": "^0.33.0"
+   }
 }
